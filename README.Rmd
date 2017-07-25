@@ -1,0 +1,30 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-files/",
+  warning = FALSE,
+  message = FALSE,
+  cache = TRUE
+)
+```
+
+# About `zillowdata`
+
+So far the package contains a few zipcode-level rental datasets from [Zillow](https://www.zillow.com/research/data/).
+
+# Installation
+
+```R
+# install.packages("devtools")
+devtools::install_github("jjchern/zillowdata")
+
+# To uninstall the package, use:
+# remove.packages("zillowdata")
+```
