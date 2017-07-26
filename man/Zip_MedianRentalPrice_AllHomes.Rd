@@ -3,7 +3,7 @@
 \docType{data}
 \name{Zip_MedianRentalPrice_AllHomes}
 \alias{Zip_MedianRentalPrice_AllHomes}
-\title{Zip_MedianRentalPrice_AllHomes}
+\title{Zipcode Level Median Rental Price for All Homes}
 \format{An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 133144 rows and 8 columns.}
 \source{
 \url{https://www.zillow.com/research/data/}
@@ -12,6 +12,6 @@
 Zip_MedianRentalPrice_AllHomes
 }
 \description{
-Zip_MedianRentalPrice_AllHomes
+Zipcode Level Median Rental Price for All Homes
 }
 \keyword{datasets}

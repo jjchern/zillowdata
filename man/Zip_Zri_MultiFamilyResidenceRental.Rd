@@ -3,7 +3,7 @@
 \docType{data}
 \name{Zip_Zri_MultiFamilyResidenceRental}
 \alias{Zip_Zri_MultiFamilyResidenceRental}
-\title{Zip_Zri_MultiFamilyResidenceRental}
+\title{Zipcode Level Zillow Rental Index (ZRI) for Multi-Family Residence Rentals}
 \format{An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 683600 rows and 9 columns.}
 \source{
 \url{https://www.zillow.com/research/data/}
@@ -12,6 +12,6 @@
 Zip_Zri_MultiFamilyResidenceRental
 }
 \description{
-Zip_Zri_MultiFamilyResidenceRental
+Zipcode Level Zillow Rental Index (ZRI) for Multi-Family Residence Rentals
 }
 \keyword{datasets}

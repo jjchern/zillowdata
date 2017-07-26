@@ -3,7 +3,7 @@
 \docType{data}
 \name{Zip_PriceToRentRatio_AllHomes}
 \alias{Zip_PriceToRentRatio_AllHomes}
-\title{Zip_PriceToRentRatio_AllHomes}
+\title{Zipcode Level Price-To-Rent Ratio Data for All Homes}
 \format{An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 1069200 rows and 9 columns.}
 \source{
 \url{https://www.zillow.com/research/data/}
@@ -12,6 +12,6 @@
 Zip_PriceToRentRatio_AllHomes
 }
 \description{
-Zip_PriceToRentRatio_AllHomes
+Zipcode Level Price-To-Rent Ratio Data for All Homes
 }
 \keyword{datasets}

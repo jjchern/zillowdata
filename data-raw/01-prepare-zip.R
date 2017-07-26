@@ -26,7 +26,7 @@ zip_csv_links_tmp %>%
     gather(YearMonth, PriceToRentRatio, -c(RegionID:SizeRank)) %>%
     print() ->
     Zip_PriceToRentRatio_AllHomes
-use_data(Zip_PriceToRentRatio_AllHomes)
+use_data(Zip_PriceToRentRatio_AllHomes, overwrite = TRUE)
 
 zip_csv_links_tmp %>%
     grep("Zip_Zri_AllHomes.csv", ., value = TRUE) %>%
@@ -34,7 +34,7 @@ zip_csv_links_tmp %>%
     gather(YearMonth, Zri, -c(RegionID:SizeRank)) %>%
     print() ->
     Zip_Zri_AllHomes
-use_data(Zip_Zri_AllHomes)
+use_data(Zip_Zri_AllHomes, overwrite = TRUE)
 
 zip_csv_links_tmp %>%
     grep("Zip_Zri_MultiFamilyResidenceRental.csv", ., value = TRUE) %>%
@@ -42,7 +42,7 @@ zip_csv_links_tmp %>%
     gather(YearMonth, Zri, -c(RegionID:SizeRank)) %>%
     print() ->
     Zip_Zri_MultiFamilyResidenceRental
-use_data(Zip_Zri_MultiFamilyResidenceRental)
+use_data(Zip_Zri_MultiFamilyResidenceRental, overwrite = TRUE)
 
 zip_csv_links_tmp %>%
     grep("Zip_MedianRentalPrice_AllHomes.csv", ., value = TRUE) %>%
@@ -50,7 +50,7 @@ zip_csv_links_tmp %>%
     gather(YearMonth, MedianRentalPrice, -c(RegionName:SizeRank)) %>%
     print() ->
     Zip_MedianRentalPrice_AllHomes
-use_data(Zip_MedianRentalPrice_AllHomes)
+use_data(Zip_MedianRentalPrice_AllHomes, overwrite = TRUE)
 
 zip_csv_links_tmp %>%
     grep("Zip_MedianRentalPrice_2Bedroom.csv", ., value = TRUE) %>%
@@ -58,5 +58,4 @@ zip_csv_links_tmp %>%
     gather(YearMonth, MedianRentalPrice, -c(RegionName:SizeRank)) %>%
     print() ->
     Zip_MedianRentalPrice_2Bedroom
-use_data(Zip_MedianRentalPrice_2Bedroom)
-
+use_data(Zip_MedianRentalPrice_2Bedroom, overwrite = TRUE)
