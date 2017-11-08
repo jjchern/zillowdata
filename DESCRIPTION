@@ -1,6 +1,6 @@
 Package: zillowdata
 Title: Zillow Data
-Version: 0.0.1.9000
+Version: 0.0.2
 Authors@R: person("JJ", "Chen", , "jiajia.chern@gmail.com", c("aut", "cre"))
 Description: Contains Zillow Research Data.
 Depends: R (>= 3.2.0)
