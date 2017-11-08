@@ -13,12 +13,31 @@ read_html("https://www.zillow.com/research/data/") %>%
     html_attr("href") %>%
     unique() %>%
     grep(".csv$", ., value = TRUE) %>%  # -> all_csv_links
-    grep("Zip", ., value = TRUE) %>%  # -> zip_csv_links
-    grep("_PriceToRentRatio_|_Zri_|_MedianRentalPrice_", ., value = TRUE) ->
+    grep("Zip", ., value = TRUE) %>%
+    print() -> zip_csv_links
+
+zip_csv_links %>%
+    grep("_PriceToRentRatio_|_Zri_|_Zhvi_|_MedianRentalPrice_", ., value = TRUE) %>%
+    print() ->
     zip_csv_links_tmp
-zip_csv_links_tmp
 
 # Tidy up and save data needed --------------------------------------------
+
+zip_csv_links_tmp %>%
+    grep("Zip_Zhvi_AllHomes.csv", ., value = TRUE) %>%
+    read_csv() %>%
+    gather(YearMonth, Zhvi, -c(RegionID:SizeRank)) %>%
+    print() ->
+    Zip_Zhvi_AllHomes
+use_data(Zip_Zhvi_AllHomes, overwrite = TRUE)
+
+zip_csv_links_tmp %>%
+    grep("Zip_Zhvi_SingleFamilyResidence.csv", ., value = TRUE) %>%
+    read_csv() %>%
+    gather(YearMonth, Zhvi, -c(RegionID:SizeRank)) %>%
+    print() ->
+    Zip_Zhvi_SingleFamilyResidence
+use_data(Zip_Zhvi_SingleFamilyResidence, overwrite = TRUE)
 
 zip_csv_links_tmp %>%
     grep("Zip_PriceToRentRatio_AllHomes.csv", ., value = TRUE) %>%

@@ -1,3 +1,15 @@
+#' Zipcode Level Zillow Home Value Index (ZHVI) for All Homes
+#'
+#' @md
+#' @source [https://www.zillow.com/research/data/]()
+"Zip_Zhvi_AllHomes"
+
+#' Zipcode Level Zillow Home Value Index (ZHVI) for Single Family Residence
+#'
+#' @md
+#' @source [https://www.zillow.com/research/data/]()
+"Zip_Zhvi_SingleFamilyResidence"
+
 #' Zipcode Level Price-To-Rent Ratio Data for All Homes
 #'
 #' @md
