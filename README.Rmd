@@ -15,10 +15,13 @@ knitr::opts_chunk$set(
 )
 ```
 
+[![Travis-CI Build Status](https://travis-ci.org/jjchern/zillowdata.svg?branch=master)](https://travis-ci.org/jjchern/zillowdata)
+[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/jjchern/zillowdata?branch=master&svg=true)](https://ci.appveyor.com/project/jjchern/zillowdata)
+
 # About `zillowdata`
 
-The repo contains R scripts (in the [`data-raw` folder](https://github.com/jjchern/zillowdata/tree/master/data-raw)) that download and process a few zipcode-level datasets from 
-[Zillow](https://www.zillow.com/research/data/). The datasets are stored in the [`data` folder](https://github.com/jjchern/zillowdata/tree/master/data). 
+The repo contains a few zipcode-level datasets from 
+[Zillow](https://www.zillow.com/research/data/).
 
 # Installation
 

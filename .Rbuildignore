@@ -3,3 +3,6 @@
 ^data-raw$
 ^README\.Rmd$
 ^README-.*\.png$
+^docs$
+^appveyor\.yml$
+^\.travis\.yml$
